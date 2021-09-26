@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: blue;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;  
+} 
+
+.headbtn {
+    height: 35px;
+}
+
+
+.table {
+    width: 100%;
+    margin-top: 15px;
+}
+.tr, .th {
+    height: 50px;
+    font-size: 25px;
+}
+.td,
+.th{
+    text-align: left; 
+    position: relative;
+    
+}
+
+ span {
+    display: flex;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+ }
+ 
+ .spanName {
+     width: 40vw;
+ }
+
+input[type=checkbox] {
+	visibility: hidden;
+    height: 25px;
+    width: 25px;
+}
+
+.btn {
+    display: none;
+}
+
+.active {
+    background-color:rgb(180, 146, 146);
+    position: relative;
+    border: none; 
+    cursor: pointer;
+}
+.chekboxActive {
+    background-color:rgb(180, 146, 146);
+    position: relative;
+    border: none; 
+    cursor: pointer;
+}
+
+.tr:hover{
+    background-color: rgb(180, 146, 146);
+    cursor: pointer;
+}
+
+.tr:hover input {
+    visibility: inherit;
+}
+
+.tr.active input {
+    visibility: inherit;
+}
+
+.tr.chekboxActive input{
+    visibility: inherit;
+}
+.tr:hover .btn {
+    background-color: transparent;
+    display: block;
+    font-size: 20px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border: none; 
+    cursor: pointer;
+}
+
+.menu {
+    width: 120px;
+    height: 150px;
+    box-shadow: 0 8px 5px 5px rgba(0, 0, 0, 0.2); 
+    position: absolute;
+    display: none; 
+    z-index: 10;
+}
+
+.menu-options {
+     list-style: none;
+     padding: 0 0;
+}
+
+.menu-options .menu-option {
+    background-color: white;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 10px 40px 10px 20px;
+    cursor: pointer;
+}
+
+.menu-option:hover {
+    background-color: turquoise;
+}
+ 
